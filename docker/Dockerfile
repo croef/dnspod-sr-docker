@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install -y vim make net-tools
 
 RUN apt-get install -y git gcc
-RUN git clone https://github.com/DNSPod/dnspod-sr.git /home/src
+RUN git clone https://github.com/croef/dnspod-sr.git /home/src
 
 WORKDIR /home/src/src
 COPY config.h /home/src/src
