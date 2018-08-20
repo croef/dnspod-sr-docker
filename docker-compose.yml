@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  dnspod-sr:
+    build: ./docker
+    container_name: dnspod-sr
+    network_mode: "host"
+    # volumes:
+    #   - ./config:/root/dnspod
